@@ -13,14 +13,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/och-och/paw.git"
+    "url": "git+https://github.com/och-och/pawnimation.git"
   },
   "author": "och",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/och-och/paw/issues"
+    "url": "https://github.com/och-och/pawnimation/issues"
   },
-  "homepage": "https://github.com/och-och/paw#readme",
+  "homepage": "https://github.com/och-och/pawnimation#readme",
   "devDependencies": {
     "typescript": "^5.4.5"
   }
