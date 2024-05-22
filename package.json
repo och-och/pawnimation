@@ -1,0 +1,27 @@
+{
+  "name": "pawnimation",
+  "version": "1.0.0",
+  "description": "A simple animation library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "animation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/och-och/paw.git"
+  },
+  "author": "och",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/och-och/paw/issues"
+  },
+  "homepage": "https://github.com/och-och/paw#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
