@@ -5,6 +5,14 @@ export class Paw {
 
 	constructor(private element: HTMLElement) {}
 
+	option<K extends keyof KeyframeAnimationOptions>(
+		key: K,
+		value: KeyframeAnimationOptions[K],
+	) {
+		this.options[key] = value
+		return this
+	}
+
 	ease(easing: string = "ease") {
 		this.options.easing = easing
 		return this
