@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "prettier --write src/** && tsc"
   },
   "keywords": [
     "animation"
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/och-och/pawnimation#readme",
   "devDependencies": {
+    "prettier": "^3.2.5",
     "typescript": "^5.4.5"
   }
 }
