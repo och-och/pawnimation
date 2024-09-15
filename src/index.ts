@@ -18,6 +18,11 @@ export class Paw {
 		return this
 	}
 
+	delay(delay: number) {
+		this.options.delay = delay
+		return this
+	}
+
 	duration(duration: number) {
 		this.options.duration = duration
 		return this
