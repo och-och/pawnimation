@@ -47,12 +47,7 @@ export class RunningPaw {
 		private animation: globalThis.Animation,
 		stay: boolean,
 	) {
-		if (stay) {
-			this.animation.finished.then((animation) => {
-				animation.commitStyles()
-				animation.cancel()
-			})
-		}
+		if (stay) animation.persist()
 	}
 
 	get finished() {
