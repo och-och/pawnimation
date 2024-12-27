@@ -58,9 +58,14 @@ export class RunningPaw {
 	) {
 		if (stay) {
 			this.animation.finished.then((animation) => {
-				if (!this.element.ownerDocument.contains(this.element)) return
-				animation.commitStyles()
-				animation.cancel()
+				if (
+					this.element.offsetWidth ||
+					this.element.offsetHeight ||
+					this.element.getClientRects().length
+				) {
+					animation.commitStyles()
+					animation.cancel()
+				}
 			})
 		}
 	}
