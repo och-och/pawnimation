@@ -33,21 +33,36 @@ export class Paw {
 	}
 
 	animate(...frames: Keyframe[]) {
-		return new RunningPaw(this.element.animate(frames, this.options), false)
+		return new RunningPaw(
+			this.element.animate(frames, this.options),
+			this.element,
+			false,
+		)
 	}
 
 	animateStay(...frames: Keyframe[]) {
 		this.options.fill = "forwards"
-		return new RunningPaw(this.element.animate(frames, this.options), true)
+		return new RunningPaw(
+			this.element.animate(frames, this.options),
+			this.element,
+			true,
+		)
 	}
 }
 
 export class RunningPaw {
 	constructor(
 		private animation: globalThis.Animation,
+		private element: HTMLElement,
 		stay: boolean,
 	) {
-		if (stay) animation.persist()
+		if (stay) {
+			this.animation.finished.then((animation) => {
+				if (!this.element.ownerDocument.contains(this.element)) return
+				animation.commitStyles()
+				animation.cancel()
+			})
+		}
 	}
 
 	get finished() {

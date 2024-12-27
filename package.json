@@ -1,28 +1,30 @@
 {
-  "name": "pawnimation",
-  "version": "1.2.1",
-  "description": "A simple animation library",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "scripts": {
-    "build": "prettier --write src/** && tsc"
-  },
-  "keywords": [
-    "animation"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/och-och/pawnimation.git"
-  },
-  "author": "och",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/och-och/pawnimation/issues"
-  },
-  "homepage": "https://github.com/och-och/pawnimation#readme",
-  "devDependencies": {
-    "prettier": "^3.2.5",
-    "typescript": "^5.4.5"
-  }
+	"name": "pawnimation",
+	"version": "1.2.2",
+	"description": "A simple animation library",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "prettier --write src/** && tsc"
+	},
+	"keywords": [
+		"animation"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/och-och/pawnimation.git"
+	},
+	"author": "och",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/och-och/pawnimation/issues"
+	},
+	"homepage": "https://github.com/och-och/pawnimation#readme",
+	"devDependencies": {
+		"prettier": "^3.2.5",
+		"typescript": "^5.4.5"
+	}
 }
