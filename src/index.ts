@@ -70,6 +70,14 @@ export class RunningPaw {
 		}
 	}
 
+	getElement() {
+		return this.element
+	}
+
+	getAnimation() {
+		return this.animation
+	}
+
 	get finished() {
 		return this.animation.finished
 	}
